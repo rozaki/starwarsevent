@@ -25,7 +25,7 @@ $event = new Event();
 $event->setName('Darth\'s surprise birthday party');
 $event->setLocation('Dethstar');
 $event->setTime(new \DateTime('tomorrow noon'));
-$event->setDetails('Ha! Dearth hates surprises!');
+//$event->setDetails('Ha! Dearth hates surprises!');
 
 $em = $container->get('doctrine')->getManager();
 $em->persist($event);
